@@ -1,3 +1,24 @@
+body,
+input {
+  color: $cl-neutral-5;
+  font-family: averta, helvetica, arial;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span {
+  margin: 0;
+  font-family: averta, helvetica, arial;
+  font-weight: 400;
+}
+
 a {
   cursor: pointer;
   font-size: 24px;
