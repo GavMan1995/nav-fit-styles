@@ -1,0 +1,19 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  background: $cl-neutral-5;
+  background-color: $cl-neutral-5;
+  color: $cl-white;
+}
+
+.c-render-target {
+  height: 100%;
+}
+
+.c-fit-app {
+  max-width: 100%;
+}

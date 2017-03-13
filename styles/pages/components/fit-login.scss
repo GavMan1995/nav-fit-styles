@@ -1,0 +1,13 @@
+.c-fit-login__logo-container {
+  @include flex-container(center);
+  width: 100%;
+}
+
+.c-fit-login__logo {
+  width: auto;
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
+}

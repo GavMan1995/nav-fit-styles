@@ -1,0 +1,83 @@
+.c-fit-group {
+  @include flex-item(100%);
+  @include flex-container(center);
+}
+
+.c-fit-group__header {
+  @include flex-item(100%);
+  @include flex-container(center, center);
+  margin-bottom: 8px;
+  padding: 24px;
+  background: linear-gradient(to left, $cl-fit-purple , $cl-fit-blue);
+  color: $cl-white;
+
+  > h1,
+  h3 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.c-fit-group__header-actions {
+  flex-basis: 100%;
+  @include flex-container(center, center);
+
+  > a,
+  p {
+    padding: 4px;
+    transition: color 0.3s;
+    color: $cl-white;
+    font-size: 24px;
+    cursor: pointer;
+
+    &:hover {
+      color: $cl-neutral-3;
+    }
+  }
+}
+
+.c-fit-group__user-container {
+  @include flex-item(300px, 1);
+  @include flex-container(center);
+  max-width: 600px;
+  margin: 8px;
+  transition: box-shadow 0.3s;
+  border: 2px solid $cl-neutral-6;
+  background-color: $cl-neutral-4;
+  color: $cl-white;
+  overflow: hidden;
+
+  > img {
+    width: 200px;
+    height: 200px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    border: 2px solid $cl-white;
+    border-radius: 50%;
+  }
+
+  > h2 {
+    flex-basis: 100%;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+}
+
+.c-fit-group__user-container.c-fit-group__user-container--link {
+  border-image: linear-gradient(to left, $cl-fit-purple , $cl-fit-blue);
+  border-image-slice: 1;
+
+  &:hover {
+    box-shadow: 0 0 16px $cl-neutral-6;
+  }
+}
+
+.c-fit-group__user-info {
+  flex-basis: 100%;
+  padding: 16px;
+  background-color: $cl-neutral-6;
+}
+
+.c-fit-group__user-info.c-fit-group__user-info--current {
+  background: linear-gradient(to left, $cl-fit-purple , $cl-fit-blue);
+}

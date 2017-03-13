@@ -1,0 +1,57 @@
+.c-fit-profile {
+  @include flex-container();
+  @include flex-item(100%);
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.c-fit-profile__info {
+  @include flex-container(center, center);
+  @include flex-item(100%);
+  margin-top: 32px;
+
+  > h1 {
+    flex-basis: 100%;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+}
+
+
+.c-fit-profile__img {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 24px;
+  cursor: pointer;
+
+  &:hover {
+    > span {
+      opacity: 1;
+    }
+
+    > img {
+      box-shadow: 0 0 16px $cl-neutral-6;
+    }
+  }
+
+  > img {
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 0.3s;
+    border-radius: 50%;
+    box-shadow: 0 0 8px $cl-neutral-6;
+  }
+
+  > span {
+    position: absolute;
+    top: 50%;
+    left: 108px;
+    width: 64px;
+    padding: 4px;
+    transition: opacity 0.3s;
+    border-radius: 4px;
+    background-color: rgba($cl-neutral-3, 0.8);
+    opacity: 0;
+  }
+}
