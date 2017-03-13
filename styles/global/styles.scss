@@ -1,11 +1,12 @@
 //=== Defaults ===\\
 @import 'defaults/resets';
-@import 'defaults/typography';
 
 //=== Tools ===\\
+@import 'tools/variables';
 @import 'tools/mixins';
 @import 'tools/responsive';
-@import 'tools/variables';
+@import 'tools/typography';
+
 
 //=== Gloabal Components ===\\
 @import 'components/buttons';
