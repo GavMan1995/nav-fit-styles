@@ -45,5 +45,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-surge');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.registerTask('default', ['connect', 'watch']);
-	grunt.registerTask('deploy', ['surge']);
+	grunt.registerTask('deploy', ['sass', 'surge']);
 }

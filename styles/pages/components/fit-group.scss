@@ -40,7 +40,7 @@
   @include flex-item(400px);
   @include flex-container(center);
   position: relative;
-  height: 400px
+  min-height: 200px;
   margin: 16px;
   transition: box-shadow 0.3s;
   border-radius: 8px;
@@ -48,6 +48,11 @@
   color: $cl-white;
   box-shadow: 0 0 16px $cl-neutral-6;
   overflow: hidden;
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .c-fit-group__user-container.c-fit-group__user-container--link {
