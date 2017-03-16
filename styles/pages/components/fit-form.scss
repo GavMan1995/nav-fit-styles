@@ -2,7 +2,7 @@
   @include flex-item(100%);
   @include flex-container(center, center, center);
   min-height: 100vh;
-  padding: 32px 0;
+  padding: 32px 20%;
   background: linear-gradient(to left, $cl-fit-purple , $cl-fit-blue);
 
   > h1 {
@@ -60,9 +60,10 @@
     background: transparent;
     color: $cl-white;
 
-    &:-webkit-autofill
-     {
-      -webkit-box-shadow: 0 0 0px 1000px #505497 inset;
+    &:-webkit-autofill {
+      //CHROME AUTO FILL COLOR CHANGE
+      //scss-lint:disable ImportantRule, VendorPrefix, ColorVariable
+      -webkit-box-shadow: 0 0 0 1000px #505497 inset;
       -webkit-text-fill-color: $cl-white !important;
     }
   }
@@ -108,7 +109,6 @@
 
 .c-fit-form__file-upload {
   position: relative;
-  flex-basis: 100%;
   margin: 16px;
   padding: 8px;
   transition: background-color 0.3s;

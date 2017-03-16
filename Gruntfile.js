@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		sass: {
-			dist: {
+			app: {
         options: {
           noCache: true,
           style: 'compressed',
@@ -38,12 +38,12 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		
+
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-surge');
-	grunt.loadNpmTasks('grunt-contrib-connect'); 
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.registerTask('default', ['connect', 'watch']);
 	grunt.registerTask('deploy', ['surge']);
 }

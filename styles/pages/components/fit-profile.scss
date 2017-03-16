@@ -8,20 +8,18 @@
 .c-fit-profile__info {
   @include flex-container(center, center);
   @include flex-item(100%);
-  margin-top: 32px;
+  margin: 32px 0;
 
   > h1 {
     flex-basis: 100%;
-    padding-bottom: 24px;
     text-align: center;
   }
 }
 
 
 .c-fit-profile__img {
+  @include flex-item(400px);
   position: relative;
-  width: 280px;
-  height: 280px;
   margin-bottom: 24px;
   cursor: pointer;
 
@@ -31,7 +29,7 @@
     }
 
     > img {
-      box-shadow: 0 0 16px $cl-neutral-6;
+      box-shadow: 0 0 16px 4px $cl-neutral-6;
     }
   }
 
