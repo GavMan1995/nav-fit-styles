@@ -40,7 +40,7 @@
   @include flex-item(400px);
   @include flex-container(center);
   position: relative;
-  min-height: 200px;
+  min-height: 100px;
   margin: 16px;
   transition: box-shadow 0.3s;
   border-radius: 8px;
