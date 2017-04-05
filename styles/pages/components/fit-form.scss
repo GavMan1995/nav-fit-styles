@@ -135,3 +135,12 @@
   }
 
 }
+
+.c-fit-form__file-upload.c-fit-form__file-upload--sm {
+  margin: 8px;
+  padding: 0 4px;
+  
+  > label {
+    font-size: 18px;
+  }
+}
